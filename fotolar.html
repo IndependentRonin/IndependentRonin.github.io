@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foto</title>
+    <link rel="stylesheet" href="anasayfa.css">
+</head>
+<body>
+    <ul>
+            <u>
+                <img src="images/heart.png" alt="" width="50px">
+            </u>
+            
+            <li><a class="aktif" href="index.html">Ana sayfa</a></li>
+                <img src="images/heart.png" alt="" width="50px">
+
+            <li><a href="fotolar.html">Fotoğraflar</a></li>
+                <img src="images/heart.png" alt="" width="50px">
+
+            <li><a href="mektup.html">Mektup</a></li>
+                <img src="images/heart.png" alt="" width="50px">
+
+            <li><a href="hayaller.html">Hayaller</a></li>
+                <img src="images/heart.png" alt="" width="50px">
+
+            <li><a href="sarki.html">Şarkılar</a></li>
+
+            <b>
+                <img src="images/heart.png" alt="" width="50px">
+            </b>
+
+        </ul>
+
+        <br>
+
+<div class="conta">
+      <header>
+        <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            SENİ ÇOK SEVİYORUM</h1>
+      </header>
+
+
+    <div class="gallery">
+        <img src="images/1.jpeg" onclick="openModal(this)">
+        <img src="images/2.jpeg" onclick="openModal(this)">
+        <img src="images/3.jpeg" onclick="openModal(this)">
+        <img src="images/4.jpeg" onclick="openModal(this)">
+        <img src="images/5.jpeg" onclick="openModal(this)">
+        <img src="images/6.jpeg" onclick="openModal(this)">
+        <img src="images/7.jpeg" onclick="openModal(this)">
+        <img src="images/8.jpeg" onclick="openModal(this)">
+        <img src="images/9.jpeg" onclick="openModal(this)">
+        <img src="images/10.jpeg" onclick="openModal(this)">
+        <img src="images/11.jpeg" onclick="openModal(this)">
+        <img src="images/12.jpeg" onclick="openModal(this)">
+        <img src="images/13.jpeg" onclick="openModal(this)">
+        <img src="images/14.jpeg" onclick="openModal(this)">
+        <img src="images/15.jpeg" onclick="openModal(this)">
+        <img src="images/16.jpeg" onclick="openModal(this)">
+        <img src="images/17.jpeg" onclick="openModal(this)">
+        <img src="images/18.jpeg" onclick="openModal(this)">
+    </div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+function openModal(img) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+// Arka plana tıklayınca kapansın
+window.onclick = function(event) {
+    const modal = document.getElementById("myModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
